@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScholarReel privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <h1>ScholarReel privacy policy</h1>
+  <p class="updated">Last updated: 29 July 2026</p>
+</header>
+
+<p>
+  ScholarReel turns published research into short-form video scripts, with each
+  claim traced to a citation. This policy explains what the app collects, what
+  leaves your device, and how to get it deleted. It covers the Android app
+  <code>com.scholarreel.app</code>.
+</p>
+
+<div class="note">
+  <strong>In short.</strong> We store your sign-in identity and a daily usage
+  counter, and nothing else. Generated scripts stay on your device. The topics
+  you type are sent to Google's Gemini API to produce a script — see
+  <a href="#ai">AI processing</a>, which is the most important section here.
+</div>
+
+<h2>Who is responsible</h2>
+<p>
+  ScholarReel is operated by an independent developer based in India. For any
+  privacy question, complaint or data request, contact
+  <a href="mailto:medifoundry.dev@gmail.com">medifoundry.dev@gmail.com</a>.
+  We acknowledge within 24 hours and resolve within 15 calendar days, in line
+  with the grievance-redressal expectations of the Indian IT Rules, 2021.
+</p>
+
+<h2>What we collect</h2>
+
+<div class="scroll">
+<table>
+  <thead>
+    <tr><th>Data</th><th>Why</th><th>Where it is stored</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Email address, name, profile photo (from Google Sign-In)</td>
+      <td>To create your account and sign you in</td>
+      <td>Supabase (our database provider)</td>
+    </tr>
+    <tr>
+      <td>Daily generation count</td>
+      <td>To enforce the free daily allowance</td>
+      <td>Supabase</td>
+    </tr>
+    <tr>
+      <td>Topics and key points you enter</td>
+      <td>To search research and generate a script</td>
+      <td>Not stored by us — passed through to the services below</td>
+    </tr>
+    <tr>
+      <td>Scripts you generate</td>
+      <td>So you can find them again</td>
+      <td><strong>Your device only.</strong> Never uploaded to us</td>
+    </tr>
+    <tr>
+      <td>Content reports you submit</td>
+      <td>Safety review, as required by Google Play</td>
+      <td>Supabase</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>
+  We do not use advertising, analytics SDKs, trackers, or cross-app identifiers.
+  We do not sell personal data. We do not build advertising profiles. We do not
+  request location, contacts, camera, microphone or storage permissions — the
+  app asks only for internet access.
+</p>
+
+<h2 id="ai">AI processing, and what Google may do with it</h2>
+<p>
+  When you generate a script, the topic and key points you typed are sent to
+  <strong>Google's Gemini API</strong>, together with metadata about research
+  papers retrieved from OpenAlex. Google generates the script and returns it.
+</p>
+<p>
+  ScholarReel currently uses the <strong>free tier</strong> of the Gemini API.
+  Under Google's terms for that tier, <strong>Google may use the prompts sent
+  and the responses returned to improve its products</strong>, and human
+  reviewers may read them. This is a meaningful difference from the paid tier
+  and we would rather state it plainly than bury it:
+</p>
+<ul>
+  <li>Do not enter confidential, sensitive or personal information into the topic or key points fields.</li>
+  <li>We do not send your name, email address or account identifier to Google alongside your prompt.</li>
+</ul>
+<p>
+  Google's handling of this data is governed by the
+  <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>.
+  If we move to the paid tier, prompts will no longer be used for training, and
+  this policy will be updated to say so.
+</p>
+
+<h2>Who else your data reaches</h2>
+<ul>
+  <li><strong>Google</strong> — sign-in, and the Gemini API as described above.</li>
+  <li><strong>Supabase</strong> — hosts our database and authentication.</li>
+  <li><strong>Render</strong> — hosts our backend server.</li>
+  <li><strong>OpenAlex</strong> — receives your search terms to find relevant published research. It does not receive anything identifying you.</li>
+</ul>
+
+<h2>Generated content</h2>
+<p>
+  Scripts are produced by an AI model and may be inaccurate, incomplete or
+  outdated. Every generated script is labelled as AI-generated in the app.
+  Claims drawn from a study are marked with a citation you can open; lines with
+  no citation are flagged as such. Always verify claims against the cited
+  sources before publishing or relying on them. You can report a script from the
+  script screen.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Under India's Digital Personal Data Protection Act, 2023 — and equivalent
+  rights elsewhere — you may:
+</p>
+<ul>
+  <li>Access the personal data we hold about you</li>
+  <li>Have it corrected</li>
+  <li>Have it erased, and withdraw your consent to processing</li>
+  <li>Raise a grievance with us, and escalate to the Data Protection Board of India if unresolved</li>
+</ul>
+<p>
+  You can delete your account and data at any time — in the app under
+  <strong>Settings &rarr; Delete account</strong>, or, if you have uninstalled
+  it, via our <a href="delete.html">data deletion page</a>.
+</p>
+
+<h2>Retention</h2>
+<p>
+  Account data is kept until you delete your account, after which it is erased
+  permanently. Scripts on your device are kept until you delete them, delete
+  your account, or uninstall the app.
+</p>
+
+<h2>Security</h2>
+<p>
+  All traffic between the app, our backend and our providers is encrypted in
+  transit using HTTPS. Data at rest is encrypted by our hosting providers. API
+  keys are held as server-side environment variables and are never shipped in
+  the app.
+</p>
+
+<h2>Children</h2>
+<p>
+  ScholarReel is not directed at children under 13, and we do not knowingly
+  collect their personal data. If you believe a child has created an account,
+  contact us and we will delete it.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes materially — particularly anything about the AI
+  processing above — we will update this page and change the date at the top.
+</p>
+
+<footer>
+  <a href="delete.html">Delete your data</a>
+  <a href="terms.html">Terms</a>
+  <a href="mailto:medifoundry.dev@gmail.com">Contact</a>
+</footer>
+
+</main>
+</body>
+</html>
